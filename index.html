@@ -29,7 +29,7 @@
             background-color: #fff;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            overflow: hidden;
+            overflow: visible;
         }
 
         /* Title */
@@ -57,22 +57,6 @@
             text-decoration: underline;
         }
         
-        /* Responsive for smaller screens */
-        @media (max-width: 768px) {
-            .container {
-                width: 95%;
-            }
-
-            h1 {
-                font-size: 28px;
-            }
-
-            p {
-                font-size: 16px;
-                margin-bottom: 15px;  /* Added margin for spacing between paragraphs */
-            }
-        }
-
         /* Optional styling for the plot container */
         #plot-container {
             margin-top: 30px;
@@ -86,7 +70,7 @@
 
     <div class="container">
         <h1>Water Level at Sharpness (River Severn)</h1>
-        <p>Water level data from the <a href="https://environment.data.gov.uk/flood-monitoring/doc/reference" target="_blank" class="api-link">UK Environment Agency Real Time Flood Monitoring API</a>.</p><br>
+        <p>Water level data from the <a href="https://environment.data.gov.uk/flood-monitoring/doc/reference" target="_blank" class="api-link">UK Environment Agency Real Time Flood Monitoring API</a>.</p>
         <p>Use the zoom buttons and range slider to explore different time periods. Use the tools to the right of the graph for further zoom/mouse wheel/tooltips features</p>
         
         <!-- Embed the Bokeh plot using an iframe -->
