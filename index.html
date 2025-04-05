@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Bokeh Plot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Wrapper for centering content */
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Title */
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #005f77;
+        }
+
+        /* Subtitle text */
+        p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        /* Responsive for smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+        /* Optional styling for the plot container */
+        #plot-container {
+            margin-top: 30px;
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Interactive Time Series Plot</h1>
+        <p>This is an interactive Bokeh plot displaying data over time. Use the zoom buttons and range slider to explore different time periods.</p>
+
+        <!-- Plot container (Bokeh plot will be inserted here) -->
+        <div id="plot-container"></div>
+
+    </div>
+
+    <!-- Bokeh plot JS and CSS -->
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.2.min.js"></script>
+    <script src="SharpnessWaterLevelPlot.html"></script> <!-- Bokeh plot HTML file -->
+
+</body>
+
+</html>
